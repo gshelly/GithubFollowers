@@ -13,6 +13,13 @@
 		AB1C39FC27600D6E007CAF9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1C39FA27600D6E007CAF9D /* Main.storyboard */; };
 		AB1C39FE27600D6F007CAF9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1C39FD27600D6F007CAF9D /* Assets.xcassets */; };
 		AB1C3A0127600D6F007CAF9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1C39FF27600D6F007CAF9D /* LaunchScreen.storyboard */; };
+		AB1C3A0927602FCE007CAF9D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1C3A0827602FCE007CAF9D /* UserModel.swift */; };
+		AB1C3A1027603842007CAF9D /* FollowersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1C3A0E27603842007CAF9D /* FollowersListViewController.swift */; };
+		AB1C3A1127603842007CAF9D /* FollowersListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB1C3A0F27603842007CAF9D /* FollowersListViewController.xib */; };
+		AB1C3A1427603BFD007CAF9D /* FollowersListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1C3A1227603BFD007CAF9D /* FollowersListCollectionViewCell.swift */; };
+		AB1C3A1527603BFD007CAF9D /* FollowersListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB1C3A1327603BFD007CAF9D /* FollowersListCollectionViewCell.xib */; };
+		AB1C3A3927646366007CAF9D /* CustomNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1C3A3827646366007CAF9D /* CustomNotification.swift */; };
+		AB1C3A3B27668E17007CAF9D /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1C3A3A27668E17007CAF9D /* ArrayExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		AB1C39FD27600D6F007CAF9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB1C3A0027600D6F007CAF9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB1C3A0227600D6F007CAF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB1C3A0827602FCE007CAF9D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		AB1C3A0E27603842007CAF9D /* FollowersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListViewController.swift; sourceTree = "<group>"; };
+		AB1C3A0F27603842007CAF9D /* FollowersListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowersListViewController.xib; sourceTree = "<group>"; };
+		AB1C3A1227603BFD007CAF9D /* FollowersListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB1C3A1327603BFD007CAF9D /* FollowersListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowersListCollectionViewCell.xib; sourceTree = "<group>"; };
+		AB1C3A3827646366007CAF9D /* CustomNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNotification.swift; sourceTree = "<group>"; };
+		AB1C3A3A27668E17007CAF9D /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,13 @@
 				AB1C39FD27600D6F007CAF9D /* Assets.xcassets */,
 				AB1C39FF27600D6F007CAF9D /* LaunchScreen.storyboard */,
 				AB1C3A0227600D6F007CAF9D /* Info.plist */,
+				AB1C3A0827602FCE007CAF9D /* UserModel.swift */,
+				AB1C3A0E27603842007CAF9D /* FollowersListViewController.swift */,
+				AB1C3A0F27603842007CAF9D /* FollowersListViewController.xib */,
+				AB1C3A1227603BFD007CAF9D /* FollowersListCollectionViewCell.swift */,
+				AB1C3A1327603BFD007CAF9D /* FollowersListCollectionViewCell.xib */,
+				AB1C3A3827646366007CAF9D /* CustomNotification.swift */,
+				AB1C3A3A27668E17007CAF9D /* ArrayExtensions.swift */,
 			);
 			path = GithubFollowers;
 			sourceTree = "<group>";
@@ -124,7 +145,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB1C3A1127603842007CAF9D /* FollowersListViewController.xib in Resources */,
 				AB1C3A0127600D6F007CAF9D /* LaunchScreen.storyboard in Resources */,
+				AB1C3A1527603BFD007CAF9D /* FollowersListCollectionViewCell.xib in Resources */,
 				AB1C39FE27600D6F007CAF9D /* Assets.xcassets in Resources */,
 				AB1C39FC27600D6E007CAF9D /* Main.storyboard in Resources */,
 			);
@@ -137,9 +160,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB1C3A3927646366007CAF9D /* CustomNotification.swift in Sources */,
+				AB1C3A1427603BFD007CAF9D /* FollowersListCollectionViewCell.swift in Sources */,
 				AB1C39F927600D6E007CAF9D /* ViewController.swift in Sources */,
 				AB1C39F527600D6E007CAF9D /* AppDelegate.swift in Sources */,
+				AB1C3A0927602FCE007CAF9D /* UserModel.swift in Sources */,
 				AB1C39F727600D6E007CAF9D /* SceneDelegate.swift in Sources */,
+				AB1C3A1027603842007CAF9D /* FollowersListViewController.swift in Sources */,
+				AB1C3A3B27668E17007CAF9D /* ArrayExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

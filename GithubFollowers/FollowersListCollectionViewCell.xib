@@ -1,21 +1,64 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FollowersListCollectionViewCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="FollowersListCollectionViewCell" customModule="GithubFollowers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="199" height="335"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <rect key="frame" x="0.0" y="0.0" width="199" height="335"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pDC-tT-a2R">
+                        <rect key="frame" x="59.5" y="7" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="pDC-tT-a2R" secondAttribute="height" multiplier="1:1" id="8ub-3t-gEu"/>
+                            <constraint firstAttribute="width" constant="80" id="rb3-O7-Q8D"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi My name is shelly I am aa beautiful young creative person. My husband is great and loves and adores me a lot" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYw-jF-AWI">
+                        <rect key="frame" x="10" y="104" width="87" height="215"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shelly Gupta Shelly Gupta Shelly Gupta Shelly Gupta" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIU-oA-wqF" userLabel="Description Label">
+                        <rect key="frame" x="102" y="104" width="87" height="72"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="jIU-oA-wqF" firstAttribute="width" secondItem="NYw-jF-AWI" secondAttribute="width" id="1gZ-e7-pvD"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="jIU-oA-wqF" secondAttribute="bottom" priority="250" constant="10" id="45N-XY-aTV"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="NYw-jF-AWI" secondAttribute="bottom" constant="10" id="CZH-fQ-302"/>
+                <constraint firstItem="jIU-oA-wqF" firstAttribute="top" secondItem="NYw-jF-AWI" secondAttribute="top" id="Nfa-0H-Zd9"/>
+                <constraint firstItem="pDC-tT-a2R" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="QxF-lv-s9l"/>
+                <constraint firstItem="pDC-tT-a2R" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="7" id="bYe-tf-qwZ"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jIU-oA-wqF" secondAttribute="bottom" constant="10" id="cyN-yW-o6g"/>
+                <constraint firstAttribute="trailing" secondItem="jIU-oA-wqF" secondAttribute="trailing" constant="10" id="gar-bE-cxg"/>
+                <constraint firstItem="jIU-oA-wqF" firstAttribute="leading" secondItem="NYw-jF-AWI" secondAttribute="trailing" constant="5" id="ize-D6-pff"/>
+                <constraint firstItem="NYw-jF-AWI" firstAttribute="top" secondItem="pDC-tT-a2R" secondAttribute="bottom" constant="17" id="lPy-GR-JEK"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="NYw-jF-AWI" secondAttribute="bottom" priority="250" constant="10" id="nWL-pT-Wqf"/>
+                <constraint firstItem="NYw-jF-AWI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="uxH-2y-ZWu"/>
+            </constraints>
+            <size key="customSize" width="199" height="335"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="jIU-oA-wqF" id="gaL-5H-MPI"/>
+                <outlet property="followersImage" destination="pDC-tT-a2R" id="2QU-aY-xpW"/>
+                <outlet property="nameLabel" destination="NYw-jF-AWI" id="IEO-TR-S8R"/>
+            </connections>
+            <point key="canvasLocation" x="48.550724637681164" y="163.72767857142856"/>
         </collectionViewCell>
     </objects>
 </document>
